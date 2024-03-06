@@ -14,7 +14,8 @@
               <p><i class="fa-solid fa-euro-sign pe-2"></i> <%= flat.price_per_night %></p>
             </div>
             <div class="card-footer">
-              <%= link_to "More info", flat_path(flat) %>
+              <%= link_to "More info", flat_path(flat), class: 'btn btn-link text-primary' %>
+              <%= link_to "Edit", edit_flat_path(flat), class: 'btn btn-link text-warning' %>
             </div>
           </div>
         </div>
